@@ -28,15 +28,6 @@ spaceBetween: 30,
         }
     }
 });
-//Tabs script
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
-    });
-    //Anchor links
 
 $(function() {
     var tab = $('#tabs .tabs-items > div');
